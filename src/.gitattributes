@@ -10,4 +10,5 @@
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
 
-*.sh text eol=lf #シェルスクリプトの改行コードをLFに統一する為
+#シェルスクリプトの改行コードをLFに統一する為
+*.sh text eol=lf 
