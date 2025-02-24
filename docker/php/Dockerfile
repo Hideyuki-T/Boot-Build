@@ -14,10 +14,11 @@ COPY --from=node:20.16 /usr/local/lib /usr/local/lib
 # パッケージ管理ツール（apt-get）の更新＆必要パッケージのインストール
 RUN apt-get update \
     && apt-get -y install \
-    git \
-    zip \
-    unzip \
-    vim \
+       git \
+       zip \
+       unzip \
+       vim \
+       netcat-openbsd \
     && docker-php-ext-install pdo_mysql bcmath \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
